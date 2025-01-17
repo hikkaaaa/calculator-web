@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", "Raleway", sans-serif;
+    background-color: rgb(186, 191, 194);
+    color: white;
+    overflow-y: scroll;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container{
+    width: 30%;
+    min-width: 460px;
+    background-color: rgb(3, 3, 12);
+    border-radius: 25px;
+}
+
+.upper{
+    overflow-wrap: break-word;
+    margin-bottom:0.4em;
+    padding: 0.4em 0.5em;
+    font-size: 3.5rem;
+    border-radius: 25px 25px 0 0;
+    background-color: rgb(32, 31, 34);
+    line-height: 1;
+    min-height: 105px;
+}
+
+.below{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first, 
+.second, 
+.third, 
+.fourth, 
+.fifth{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0.8em;
+}
+
+.yellow_buttons{
+    background-color: rgb(255, 179, 0);
+    border: none;
+    border-radius: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: "Quicksand", "Raleway", sans-serif;
+    font-size: 2.5rem;
+    width: 2.3em;
+    height: 2.3em;
+    transition: background-color 0.3s ease;
+}
+
+.yellow_buttons:hover{
+    background-color: rgb(255, 210, 107);
+}
+
+.yellow_buttons:active{
+    color:rgb(255, 210, 107);
+    background-color: rgb(255, 255, 255);
+}
+
+.gray-buttons{
+    background-color: rgb(98, 97, 95);
+    border: none;
+    border-radius: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: "Quicksand", "Raleway", sans-serif;
+    font-size: 2.5rem;
+    width: 2.3em;
+    height: 2.3em;
+    transition: background-color 0.3s ease;
+}
+
+.gray-buttons:hover{
+    background-color:rgb(164, 163, 159);    
+}
+
+.gray-buttons:active{
+    color: rgb(164, 163, 159);
+    background-color: white;    
+}
+
+
+

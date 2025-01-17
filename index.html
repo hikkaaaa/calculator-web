@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calulator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="upper" id = "equation">0</div>
+            <div class="below">
+                <div class="first">
+                    <button class = "yellow_buttons" onclick = "clickOn(`+`)">+</button>
+                    <button class = "gray-buttons" onclick = "clickOn(`7`)">7</button>
+                    <button class = "gray-buttons"onclick = "clickOn('8')">8</button>
+                    <button class = "gray-buttons"onclick = "clickOn('8')">9</button>
+                </div>
+                <div class="second">
+                    <button class = "yellow_buttons"onclick = "clickOn('-')">-</button>
+                    <button class = "gray-buttons"onclick = "clickOn('4')">4</button>
+                    <button class = "gray-buttons"onclick = "clickOn('5')">5</button>
+                    <button class = "gray-buttons"onclick = "clickOn('6')">6</button>
+                </div>
+                <div class="third">
+                    <button class = "yellow_buttons"onclick = "clickOn('*')">*</button>
+                    <button class = "gray-buttons"onclick = "clickOn('1')">1</button>
+                    <button class = "gray-buttons"onclick = "clickOn('2')">2</button>
+                    <button class = "gray-buttons"onclick = "clickOn('3')">3</button>
+                </div>
+                <div class="fourth">
+                    <button class = "yellow_buttons"onclick = "clickOn('/')">/</button>
+                    <button class = "gray-buttons"onclick = "clickOn('0')">0</button>
+                    <button class = "gray-buttons"onclick = "clickOn('.')">.</button>
+                    <button class = "yellow_buttons" onclick = "equate()">=</button>
+                </div>
+                <div class="fifth">
+                    <button class = "yellow_buttons" onclick="remove()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "calulator.js"></script>
+</body>
+</html>
